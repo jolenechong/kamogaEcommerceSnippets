@@ -20,7 +20,7 @@ Simple Comparision Tabel for Products<br>
 
 ## Getting started
 1. Clone Repo
-```git clone https://github.com/jolenechong/TheCosyPaws.git```
+```git clone https://github.com/jolenechong/kamogaEcommerceSnippets.git```
 2. Edit the images and descriptions in the HTML file respectively
 
 ## License
