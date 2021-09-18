@@ -1,9 +1,9 @@
 # Kamoga - Snippets of code for Ecommerce Sites
 A part of a Ecommerce Website done for The Cosy Paws, this source code is for 3 components as listed below.<br>
 Feel free to use this as a template for your projects.
-- Comparison Table
-- DropDown (can be used for FAQs)
-- Display price and product desription section
+- Display price and product desription section (Live Demo: https://jolenechong.github.io/kamogaEcommerceSnippets/kamogaWebsiteTabs.html)
+- DropDown, can be used for FAQs (Live Demo: https://jolenechong.github.io/kamogaEcommerceSnippets/kamogaWebsiteDropdown.html)
+- Comparison Table (Live Demo: https://jolenechong.github.io/kamogaEcommerceSnippets/kamogaWebsiteTable.html)
 
 ## About Project
 Source Code: https://github.com/jolenechong/kamogaEcommerceSnippets <br>
