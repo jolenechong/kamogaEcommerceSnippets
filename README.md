@@ -1,5 +1,6 @@
 # Kamoga - Snippets of code for Ecommerce Sites
 A part of a Ecommerce Website done for The Cosy Paws, this source code is for 3 components as listed below.<br>
+Feel free to use this as a template for your projects.
 - Comparison Table
 - DropDown (can be used for FAQs)
 - Display price and product desription section
