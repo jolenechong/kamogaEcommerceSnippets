@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        /* margin: 0; */
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #eeeeee;
+      }
+      p {
+        font-family: "Nunito";
+        color: #270411;
+        font-weight: 500;
+      }
+
+      h1 {
+        font-family: sans-serif;
+        font-weight: 700;
+        color: #270411;
+      }
+
+      button {
+        font-family: "Nunito";
+        font-weight: 550;
+        color: #270411;
+      }
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 50px;
+        transition: 0.3s;
+        font-size: 17px;
+        border-top: 2px solid rgb(187, 187, 187);
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        border-top: 2px solid #270411;
+        transition: 400ms;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        border-top: 2px solid #270411;
+        transition: 400ms;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border-top: none;
+      }
+      .imgColumn img {
+        max-width: 500px;
+        width: 100%;
+      }
+
+      .imgColumn {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .descriptionColumn {
+        flex: 1;
+        padding: 10px;
+        margin-top: 2%;
+      }
+      .bookNow {
+        border: 2px #270411 solid;
+        background-color: transparent;
+        padding: 12px 16px;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+      }
+
+      #tabsImg,
+      .tab {
+        display: flex;
+        justify-content: center;
+      }
+
+      .bookNow:hover {
+        background-color: #270411;
+        color: white;
+        transition: 400ms;
+      }
+      .imgNContent {
+        display: flex;
+      }
+      p {
+        color: #270411;
+      }
+
+      .colors {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: rgb(177, 177, 177) 1px solid;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .colors ~ span {
+        font-family: "Nunito";
+        font-size: 15px;
+      }
+
+      .colors #color1 {
+        background-color: black;
+        border-radius: 50%;
+        width: 15px;
+        height: 12px;
+        margin: 3.5px;
+      }
+
+      .colors #color2 {
+        background-color: rgb(85, 85, 85);
+        border-radius: 50%;
+        width: 15px;
+        height: 12px;
+        margin: 3.5px;
+      }
+
+      .colors #color3 {
+        background-color: rgb(187, 187, 187);
+        border-radius: 50%;
+        width: 15px;
+        height: 12px;
+        margin: 3.5px;
+      }
+
+      .price {
+        font-weight: 900;
+        font-size: 22px;
+      }
+/* 
+      @media only screen and (max-width: 961px) {
+        #tabsImg {
+          display: none;
+        }
+        .imgNContent {
+          flex-direction: column;
+        }
+        .descriptionColumn {
+          margin-top: 0;
+        }
+      } */
+      @media only screen and (max-width: 961px) {
+        #tabsImg {
+          display: inline-block;
+        }
+        .imgNContent {
+          flex-direction: column;
+        }
+        .descriptionColumn {
+          margin-top: 0;
+        }
+      }
+
+      /* for the overlay  text over the smaller images */
+      .imageContainer {
+        position: relative;
+        display: inline-block;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 175px;
+        height: 130px;
+        opacity: 1;
+        margin: 10px;
+        transition: 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.487);
+        color: white;
+      }
+
+      .overlay p {
+        margin-top: 45px;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .imageContainer:hover .overlay {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      style="display: flex; align-items: center; justify-content: center"
+    >
+      <div>
+        <div id="firstTab" class="tabcontent" style="display: block">
+          <div class="imgNContent">
+            <div class="imgColumn">
+              <img src="https://i.ibb.co/9skXJKb/3-1-speakers.jpg" />
+            </div>
+            <div class="descriptionColumn">
+              <h1>KamoGa 3.1</h1>
+              <div style="display: flex; align-items: center">
+                <div class="colors"><div id="color1"></div></div>
+                <span>Jet Black</span>
+                <div class="colors"><div id="color2"></div></div>
+                <span>Matte</span>
+                <div class="colors"><div id="color3"></div></div>
+                <span>Silver</span>
+              </div>
+              <p>
+                Different systems for any space and purpose specifications. Book
+                an appointment for a demo with our audio specialist now.
+              </p>
+              <p class="price">$2488</p>
+              <button class="bookNow">Book Appointment</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="secondTab" class="tabcontent">
+          <div class="imgNContent">
+            <div class="imgColumn">
+              <img src="https://i.ibb.co/8zCtgNH/5-1-speakers.jpg" />
+            </div>
+            <div class="descriptionColumn">
+              <h1>KamoGa 5.1</h1>
+              <div style="display: flex; align-items: center">
+                <div class="colors"><div id="color1"></div></div>
+                <span>Jet Black</span><span></span>
+                <div class="colors"><div id="color2"></div></div>
+                Matte
+                <div class="colors"><div id="color3"></div></div>
+                Silver
+              </div>
+              <p>
+                Different systems for any space and purpose specifications. Book
+                an appointment for a demo with our audio specialist now.
+              </p>
+              <p class="price">$3499</p>
+              <button class="bookNow">Book Appointment</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="thirdTab" class="tabcontent">
+          <div class="imgNContent">
+            <div class="imgColumn">
+              <img src="https://i.ibb.co/8zCtgNH/5-1-speakers.jpg" />
+            </div>
+            <div class="descriptionColumn">
+              <h1>KamoGa 5.1(w)</h1>
+              <div style="display: flex; align-items: center">
+                <div class="colors"><div id="color1"></div></div>
+                <span>Jet Black</span><span></span>
+                <div class="colors"><div id="color2"></div></div>
+                Matte
+                <div class="colors"><div id="color3"></div></div>
+                Silver
+              </div>
+              <p>
+                Different systems for any space and purpose specifications. Book
+                an appointment for a demo with our audio specialist now.
+              </p>
+              <p class="price">$3588</p>
+              <button class="bookNow">Book Appointment</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="fourthTab" class="tabcontent">
+          <div class="imgNContent">
+            <div class="imgColumn">
+              <img src="https://i.ibb.co/2ZnY6GY/7-1-speakers.jpg" />
+            </div>
+            <div class="descriptionColumn">
+              <h1>KamoGa 7.1</h1>
+              <div style="display: flex; align-items: center">
+                <div class="colors"><div id="color1"></div></div>
+                <span>Jet Black</span><span></span>
+                <div class="colors"><div id="color2"></div></div>
+                Matte
+                <div class="colors"><div id="color3"></div></div>
+                Silver
+              </div>
+              <p>
+                Different systems for any space and purpose specifications. Book
+                an appointment for a demo with our audio specialist now.
+              </p>
+              <p class="price">$3888</p>
+              <button class="bookNow">Book Appointment</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top: 2px solid rgb(187, 187, 187)"></div>
+        <div id="tabsImg">
+          <div class="imageContainer" onclick="openTab(event, 'firstTab')">
+            <img
+              src="https://i.ibb.co/9skXJKb/3-1-speakers.jpg"
+              style="width: 175px; margin: 10px"
+            />
+            <div class="overlay">
+              <p>KamoGa 3.1</p>
+            </div>
+          </div>
+          <div class="imageContainer" onclick="openTab(event, 'secondTab')">
+            <img
+              src="https://i.ibb.co/8zCtgNH/5-1-speakers.jpg"
+              style="width: 175px; margin: 10px"
+            />
+            <div class="overlay">
+              <p>KamoGa 5.1</p>
+            </div>
+          </div>
+          <div class="imageContainer" onclick="openTab(event, 'thirdTab')">
+            <img
+              src="https://i.ibb.co/8zCtgNH/5-1-speakers.jpg"
+              style="width: 175px; margin: 10px"
+            />
+            <div class="overlay">
+              <p>KamoGa 5.1</p>
+            </div>
+          </div>
+          <div class="imageContainer" onclick="openTab(event, 'fourthTab')">
+            <img
+              src="https://i.ibb.co/2ZnY6GY/7-1-speakers.jpg"
+              style="width: 175px; margin: 10px"
+            />
+            <div class="overlay">
+              <p>KamoGa 5.1</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'firstTab')">Kamoga 3.1</button>
+          <button class="tablinks" onclick="openTab(event, 'secondTab')">Kamoga 5.1</button>
+          <button class="tablinks" onclick="openTab(event, 'thirdTab')">Kamoga 5.1(w)</button>
+          <button class="tablinks" onclick="openTab(event, 'fourthTab')">Kamoga 7.1</button>
+      </div> -->
+      </div>
+    </section>
+
+    <script>
+      function openTab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+      </style>
+    <style>
+      body {
+        /* padding-top:75px; */
+        font-family: sans-serif;
+        font-weight: 500;
+        font-family: 'Nunito';color:#270411;font-weight: 500;
+      }
+
+      .collapsible{
+        font-family: 'Nunito';color:#270411;font-weight: 500;
+      }
+
+      img{
+        width: 100%;
+        max-width: 300px;
+      }
+      .collapsible {
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid rgb(187, 187, 187);
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        background-color: transparent;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .collapsible:after {
+        content: "\002B";
+        color: black;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        transition: 400ms;
+      }
+
+      .active:after {
+        content: "+";
+        transform: rotate(45deg);
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        max-width: 900px;
+        /* padding-right: 20px; */
+      }
+      ul li {
+        list-style: none;
+      }
+      .collapseContainer {
+        margin: auto;
+        max-width: 900px;
+      }
+      .column {
+        /* float: left; */
+        flex: 50%;
+      }
+
+      /* Clear floats after the columns */
+      .row {
+        display: flex;
+      }
+      /* img {
+        width: 150px;
+      } */
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .row{
+          flex-direction: column;
+          /* border: 1px solid black; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="https://i.ibb.co/5Grph7Q/spk.png" alt="spk" border="0" /> -->
+
+    <div style="display: flex;justify-content: center;align-items: center;height: 100vh;">
+    <section class="collapseContainer">
+      <button class="collapsible">Remote</button>
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <ul>
+              <li>7 Input modes</li>
+              <li>6 Programmable Sound Experience</li>
+              <li>Volumn Control, Mic Volume</li>
+              <li>Sub Woofer Volume Control</li>
+              <li>Center Speaker Volume Control</li>
+              <li>Echo Effects Volume Control</li>
+              <li>138 x 45 x 16 mm</li>
+              <li>2 x AA Battery</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="https://i.ibb.co/16mhQ9H/remote.png" alt="remote-1" />
+          </div>
+        </div>
+      </div>
+
+      <button class="collapsible">Speakers</button>
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <ul>
+              <li>THD (Total Harmonic Distortion): 5% (1kHz, 1W)</li>
+              <li>Power: 40W</li>
+              <li>7 Satelite Speakers</li>
+              <li>2 x 2.5" Driver tweeter</li>
+              <li>Sensitivity 88dB</li>
+              <li>Frequency Response: 300Hz-20KHz</li>
+              <li>High graded Polymer ABS Plastic, Aluminium Grill</li>
+              <li>Matte Black Finish</li>
+              <li>61 x 83 x 123mm | 0.5kg</li>
+              <li>**Wall Mount Bracket | Floor Stand</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="https://i.ibb.co/LvJ2mrh/speakers.png" alt="spk" border="0" />
+          </div>
+        </div>
+      </div>
+
+      <button class="collapsible">Bass Module</button>
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <ul>
+              <li>THD (Total Harmonic Distortion) : 5% (1kHz, 1W)</li>
+              <li>Maximum Power: 100W</li>
+              <li>1 x 10" Driver</li>
+              <li>Sensitivity: 84dB</li>
+              <li>Frequency Responds: 37-500Hz</li>
+              <li>Side Ported Passive Woofer</li>
+              <li>328 x 363 x 340mm | 12Kg</li>
+              <li>**Wall Bracket | Floor Mount</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="https://i.ibb.co/7bNYgM5/bass-module.png" alt="bass module" border="0">
+          </div>
+        </div>
+      </div>
+
+      <button class="collapsible">Microphone</button>
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <ul>
+              <li>LCD Display, Battery Indicator/ Frequency Indicator</li>
+              <li>Frequency: 740-790Mhz UHF</li>
+              <li>Dynamic Range: 100dB</li>
+              <li>THD (Total Harmonic Distortion): 5% (qkHz, 1W)</li>
+              <li>Working Range: 50m (Without obstacles)</li>
+              <li>Battery Life: 8hrs</li>
+              <li>Battery: 2 x 1.5AA</li>
+              <li>Frequency Learning VIA RF</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="https://i.ibb.co/TT7HzQF/mic.png" alt="Mic-main" border="0">
+          </div>
+        </div>
+      </div>
+
+      <button class="collapsible">Main Module</button>
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <ul>
+              <li>THD (Total Harmonic Distortion): 5% (1kHz,1W)</li>
+              <li>Maximum Power: 100W</li>
+              <li>1 x 10" Driver</li>
+              <li>Sensitivity: 84dB</li>
+              <li>Frequency Responds: 37-500Hz</li>
+              <li>Side Ported Passive Woofer</li>
+              <li>328 x 363 x 340mm | 12Kg</li>
+              <li>** Wall Bracket | Floor Mount</li>
+            </ul>
+          </div>
+        <div class="column">
+          <img src="https://i.ibb.co/Bw4VSJq/module.jpg" alt="module">
+        </div>
+      </div>
+      </div>
+
+      <button class="collapsible">Ceiling Speaker</button>
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <ul>
+              <li>
+                Each Speaker has one 6.5" woofer and one 360° adjustable positioned
+                1" tweeters.
+              </li>
+              <li>
+                High-quality, full-range performance that msot other installed
+                speakers can't match. Built for karaoke Singing, Movie watching and
+                Song listening
+              </li>
+              <li>
+                Exclusive Stereo Everywhere™ speaker performance covers the room
+                with balanced stereo sound - no drop-offs
+              </li>
+              <li>
+                A near-bezel-less construction blends elegantly into the room's
+                design; easily paintable grilles
+              </li>
+              <li>
+                Standard dogleg clamps and magnetically attached drilles make
+                installation fast and easy
+              </li>
+              <li>Adjustable 4Ω - 8Ω settings</li>
+              <li>Only use with KamoGa series ampifier in 3.1,5.1,7.1 range</li>
+              <br />
+              <li>160W</li>
+              <li>1 x 1" Tweeter</li>
+              <li>1 x 6.5" Woofer Unit</li>
+              <li>+3 -3 individual adjustment</li>
+              <br />
+              <li>Frequency Responds: 45Hz - 20KHz</li>
+              <li>High draded Polyer ABS Plastics</li>
+              <li>Aluminium Grill with snap on Magnets</li>
+              <li>Matte Black Finish</li>
+              <li>233.5 x 101mm | 1.14kg</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="https://i.ibb.co/JCq7sch/ceiling-speaker.png" alt="ceiling-1">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

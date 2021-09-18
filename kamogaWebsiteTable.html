@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+  </style>
+<style>
+body{
+  font-family: sans-serif;
+  font-weight: 500;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:550px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 900px;
+  min-width:646px;
+  min-width: 800px;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th{
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #270411;
+}
+
+td{
+  font-family: 'Nunito';color:#270411;font-weight: 500;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+#comparisonTable{
+  overflow-x: scroll;
+}
+}
+
+</style>
+</head>
+<body>
+
+  <section id="comparisonTable">
+    <table>
+      <tr>
+        <th style="width:30%">Product Type</th>
+        <th>KAMOGA 3.1</th>
+        <th>KAMOGA 5.1</th>
+        <th>KAMOGA 5.1(W)</th>
+        <th>KAMOGA 7.1</th>
+      </tr>
+      <tr>
+        <td>Wireless Rear</td>
+        <td><i class="fa fa-remove"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-remove"></i></td>
+        <td><i class="fa fa-remove"></i></td>
+      </tr>
+      <tr>
+        <td>200sqft and below</td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-remove"></i></td>
+      </tr>
+      <tr>
+        <td>250 - 450sqft</td>
+        <td><i class="fa fa-remove"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+      </tr>
+      <tr>
+        <td>500 - 800sqft</td>
+        <td><i class="fa fa-remove"></i></td>
+        <td><i class="fa fa-remove"></i></td>
+        <td><i class="fa fa-remove"></i></td>
+        <td><i class="fa fa-check"></i></td>
+      </tr>
+      <tr>
+        <td>Dolby TrueHD</td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+      </tr>
+      <tr>
+        <td>DTS</td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+      </tr>
+      <tr>
+        <td>Dolby Atmos (Not applicable to Apple TV)</td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+        <td><i class="fa fa-check"></i></td>
+      </tr>
+    </table>
+  </section>
+</body>
+</html>
